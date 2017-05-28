@@ -18,7 +18,7 @@ header {
   height: 30rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 0;
 
   border: 1px solid green;
 
@@ -32,8 +32,6 @@ nav {
   margin: 1rem auto;
   background-color: cadetblue;
   color: white;
-
-  border: 1px solid red;
 }
 
 .logo {
@@ -75,4 +73,41 @@ nav a {
   line-height: 1.2;
   padding: 1.5rem 5rem;
   background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem 0;
+  padding: 0 3rem;
+
+  text-align: center;
+}
+
+
+#services img {
+  width: 5rem;
+  padding: 0 0 1rem 0;
+}
+
+#services img.paper-icon {
+  width: 3.5rem;
+
 }
