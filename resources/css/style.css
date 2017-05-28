@@ -19,9 +19,7 @@ header {
   width: 100%;
   margin: 0 auto;
   padding-top: 0;
-
-  border: 1px solid green;
-
+  
 }
 
 nav {
@@ -50,6 +48,10 @@ nav li {
   display: inline-block;
   list-style-type: none;
   padding: 1rem 2rem;
+}
+
+.responsive{
+  display: none;
 }
 
 nav a {
@@ -108,11 +110,12 @@ nav a {
 
 /* Second section of main - Informations: Philosophy and Appointments */
 
-.information {
+.container {
   display: flex;
   justify-content: flex-start;
   width: 960px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .philosophy, .appointments{
@@ -132,8 +135,117 @@ h2 {
   width: 10rem;
 }
 
-.information p {
+.container p {
   line-height: 1.4rem;
 }
 
 /* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+
+/* Media Queries for responsiveness */
+
+/* Tablet version */
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+  }
+
+  nav {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .slogan {
+    width: 100%;
+}
+
+.slogan h1 {
+  margin: 5rem 2rem 0 0;
+  font-size: 1.33rem;
+  padding: 0.75rem 4rem;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Other version */
+
+@media only screen and (max-width: 750px) {
+
+.general {
+  display: none;
+}
+
+
+.responsive {
+  display: inline-block;
+}
+
+/* Mobile version */
+
+@media only screen and (max-width: 560px) {
+
+.logo p {
+  display: none;
+}
+
+header {
+  height: 17rem;
+  background-position: 20%;
+}
+
+.slogan h1 {
+  margin: 9rem 0 0 0;
+  padding: 0.75rem 0rem;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3.77rem 0;
+  padding: 0;
+}
+
+.service {
+  margin: 0 0 1.54rem 0;
+  padding: 0;
+  font-size: 0.77rem;
+  line-height: 1.2rem;
+}
+
+
+.philosophy, .appointments{
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 0;
+}
+
+h2 {
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.container p {
+  font-size: 0.77rem;
+}
+
+
+}
