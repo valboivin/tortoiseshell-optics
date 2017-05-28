@@ -75,12 +75,7 @@ nav a {
   background-color: white;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  width: 960px;
-  margin: 0 auto;
-}
+/* First section of main - Services and Icon*/
 
 #services {
   display: flex;
@@ -109,5 +104,36 @@ nav a {
 
 #services img.paper-icon {
   width: 3.5rem;
-
 }
+
+/* Second section of main - Informations: Philosophy and Appointments */
+
+.information {
+  display: flex;
+  justify-content: flex-start;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.philosophy, .appointments{
+  width: 35%;
+  margin-bottom: 5rem;
+  padding: 0 2.5%;
+}
+
+h2 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+
+.information p {
+  line-height: 1.4rem;
+}
+
+/* Footer */
